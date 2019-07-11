@@ -12,27 +12,47 @@ html form {
   align-items: center;
   justify-content: center;
 }
-body .image,
-html .image {
-  position: relative;
+body form .r_black:checked ~ .image_output,
+html form .r_black:checked ~ .image_output {
+  background-image: url(../demomap/black.png);
 }
-body .image img,
-html .image img {
-  width: 250px;
-  height: auto;
+body form .r_white:checked ~ .image_output,
+html form .r_white:checked ~ .image_output {
+  background-image: url(../demomap/white.png);
 }
-body .image .output,
-html .image .output {
+body form .r_red:checked ~ .image_output,
+html form .r_red:checked ~ .image_output {
+  background-image: url(../demomap/red.png);
+}
+body form .r_green:checked ~ .image_output,
+html form .r_green:checked ~ .image_output {
+  background-image: url(../demomap/green.png);
+}
+body form .r_blue:checked ~ .image_output,
+html form .r_blue:checked ~ .image_output {
+  background-image: url(../demomap/blue.png);
+}
+body form .image_output,
+html form .image_output {
+  height: 366px;
+  width: 230px;
+  border: 1px solid black;
+  background-image: url(../demomap/starmap_pic.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body form .output,
+html form .output {
   position: relative;
   top: -80px;
 }
-body .image .output .res_geo,
-html .image .output .res_geo,
-body .image .output .res_name,
-html .image .output .res_name,
-body .image .output .res_lastname,
-html .image .output .res_lastname {
-  color: #fff;
+body form .output .res_geo,
+html form .output .res_geo,
+body form .output .res_name,
+html form .output .res_name,
+body form .output .res_lastname,
+html form .output .res_lastname {
+  color: #ddd;
   font-size: 12px;
   font-style: italic;
   margin: 5px;

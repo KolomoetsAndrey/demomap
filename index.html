@@ -15,20 +15,24 @@
                     <input type="text" name="geo" id="geo" value="41.1254.54 / 74.44448.21">
                     <input type="text" name="name" id="name" value="Your Name">
                     <input type="text" name="lastname" id="lastname" value="Your Last Name">
-                    <button id="get_data" type="button">Получить карту</button>
-                </form>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="image">
-                    <img src="starmap_pic.png" alt="">
+                    <label class="color_text" for="r_black">черный</label>
+                    <input class="r_check r_black" type="radio" id="r_black" name="stars_color" value="black">
+                    <label class="color_text" for="r_white">белый</label>
+                    <input class="r_check r_white" type="radio" id="r_white" name="stars_color" value="white">
+                    <label class="color_text" for="r_red">красный</label>
+                    <input class="r_check r_red" type="radio" id="r_red" name="stars_color" value="red">
+                    <label class="color_text" for="r_green">зеленый</label>
+                    <input class="r_check r_green" type="radio" id="r_green" name="stars_color" value="green">
+                    <label class="color_text" for="r_blue">синий</label>
+                    <input class="r_check r_blue" type="radio" id="r_blue" name="stars_color" value="blue">
+                    <button id="get_data" type="button">Сгенерить карту</button>
+                    <div class="image_output"></div>
                     <div class="output">
                         <p class="res_geo" id="res_geo"></p>
                         <p class="res_name" id="res_name"></p>
                         <p class="res_lastname" id="res_lastname"></p>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </header>
